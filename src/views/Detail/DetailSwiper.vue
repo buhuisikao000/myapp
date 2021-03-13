@@ -17,19 +17,18 @@ export default{
     props:['imgNum','myclass'],
     mounted(){
         new Swiper(`.${this.myclass}`, {
-            slidesPerView: 4,
+            slidesPerView: `${this.imgNum}`,
             spaceBetween: 10,
             freeMode: true,
         })
     }
 }
 </script>
-
 <style lang='scss' scoped>
 .swiper-container{
     height:100%;
     img{
-        width:100%;
+        width:80%;
     }
 }
 </style>

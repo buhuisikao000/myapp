@@ -1,7 +1,7 @@
 <template>
   <!-- v-if解决提前渲染问题,在数据回来之前就会渲染 -->
-  <div v-if='flimInfo'>
-
+  <div v-if='flimInfo' class='detailpage'>
+    <mt-button icon="back" id='backBTN' size="small" plain type='primary' @click='pagebake'></mt-button>
     <div class="coverImg">
       <img :src='flimInfo.poster'>
       <div class='coverInfo active'>
@@ -65,7 +65,6 @@ export default{
           }
         }).then(res=>{
           this.flimInfo=res.data.data.film
-          console.log(res.data.data.film)
         })
     },
 
@@ -74,6 +73,11 @@ export default{
       this.$store.commit('hideTabbar',true)
     },
 
+    methods:{
+      pagebake(){
+        this.$router.go(-1)
+      }
+    },
 
     components:{
       swiper
@@ -120,5 +124,15 @@ export default{
 p{
   padding:5px;
   font-size:15px;
+}
+.detailpage{
+  #backBTN{
+    position:absolute;
+    top:8px;
+    left:3px;
+    z-index:2;
+    outline:none;
+    border:none;
+  }
 }
 </style>

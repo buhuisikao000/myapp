@@ -1,8 +1,6 @@
 <template>
   <div>
     <tabbar v-if='$store.state.isTabbarShow'></tabbar>
-    
-    
     <router-view></router-view>
   </div>
 </template>
@@ -35,5 +33,18 @@ export default{
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss'>
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  height:100%;
+}
+body{
+  background:#eee;
+}
+ul,li{
+  list-style:none;
+}
 </style>

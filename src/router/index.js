@@ -4,7 +4,6 @@ import Film from '@/views/Flim'
 import Cinema from '@/views/Cinema'
 import Center from '@/views/Center'
 import Detail from '@/views/Detail'
-import Login from '@/views/Login'
 import Nowplaying from '@/views/Film/Nowplaying'
 import Comingsoon from '@/views/Film/Comingsoon'
 import City from '@/views/City'
@@ -41,11 +40,7 @@ const routes = [
     name: 'Cinema',
     component: Cinema
   },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login
-  },
+ 
   {
     //动态路由,记得加冒号(:),动态匹配 
     path: '/detail/:id',

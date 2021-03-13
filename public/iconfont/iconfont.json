@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "134038",
+      "name": "money",
+      "font_class": "money",
+      "unicode": "e91a",
+      "unicode_decimal": 59674
+    },
+    {
+      "icon_id": "9004960",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "11690687",
+      "name": "红包",
+      "font_class": "ziyuan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "12192985",
+      "name": "money bag",
+      "font_class": "moneybag",
+      "unicode": "eb7f",
+      "unicode_decimal": 60287
+    },
+    {
+      "icon_id": "13504231",
+      "name": "礼券",
+      "font_class": "liquan",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
       "icon_id": "20114112",
       "name": "管理",
       "font_class": "guanli",
